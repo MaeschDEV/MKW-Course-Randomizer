@@ -150,18 +150,31 @@ const items = [
     text: "Rainbow Road",
   },
 ];
-
-const urlParams = new URLSearchParams(window.location.search);
-const index = urlParams.get("index");
-const selected = items[index];
-
-document.querySelector("#preview-img").src = selected.icon;
-document.querySelector("#name-text").textContent = selected.text;
+let currentIndex = 0;
+shuffle(items);
 
 function getRandomItem() {
-  const randomIndex = Math.floor(Math.random() * 30);
-  const selected = items[randomIndex];
+  const selected = items[currentIndex];
 
   document.querySelector("#preview-img").src = selected.icon;
   document.querySelector("#name-text").textContent = selected.text;
+
+  currentIndex++;
+  if (currentIndex >= items.length) {
+    alert("New shuffle!");
+
+    shuffle(items);
+    currentIndex = 0;
+  }  
+}
+
+function shuffle(array) {
+  let currentIndex = array.length;
+
+  while (currentIndex != 0) {
+    let randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+  }
 }
