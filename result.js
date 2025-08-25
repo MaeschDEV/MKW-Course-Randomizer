@@ -161,8 +161,6 @@ function getRandomItem() {
 
   currentIndex++;
   if (currentIndex >= items.length) {
-    alert("New shuffle!");
-
     shuffle(items);
     currentIndex = 0;
   }  
