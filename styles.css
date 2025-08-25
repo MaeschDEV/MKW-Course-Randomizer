@@ -74,16 +74,16 @@ body {
 }
 
 @media (max-width: 600px) {
-    .header {
-        font-size: 18px;
-        gap: 10px;
-    }
-    .randomize-btn {
-        padding: 12px 20px;
-        font-size: 16px;
-    }
-    .result-container {
-        font-size: 20px;
-        width: 95%;
-    }
+  .header {
+    font-size: 18px;
+    gap: 10px;
+  }
+  .randomize-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+  .result-container {
+    font-size: 20px;
+    width: 95%;
+  }
 }

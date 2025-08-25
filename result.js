@@ -163,7 +163,7 @@ function getRandomItem() {
   if (currentIndex >= items.length) {
     shuffle(items);
     currentIndex = 0;
-  }  
+  }
 }
 
 function shuffle(array) {
@@ -173,6 +173,9 @@ function shuffle(array) {
     let randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex--;
 
-    [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex],
+      array[currentIndex],
+    ];
   }
 }
