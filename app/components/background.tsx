@@ -12,7 +12,7 @@ const background = ({ image_path }: Props) => {
           src={image_path}
           alt="background_image"
           fill
-          className="object-cover brightness-75"
+          className="object-cover brightness-60"
           priority
         />
       </div>
