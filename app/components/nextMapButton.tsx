@@ -14,7 +14,7 @@ export default function NextMapButton() {
                      transition-all duration-200 ease-in-out hover:scale-110
                      shadow-lg hover:shadow-xl active:scale-95"
         >
-          Nächste!
+          Next!
         </button>
       </div>
     </div>
