@@ -15,9 +15,9 @@ const title = ({ image_path, title }: Props) => {
             alt="mario_kart_world_logo"
             width={1599}
             height={1599}
-            className="w-25 md:w-50 h-auto"
+            className="w-30 md:w-50 h-auto"
           />
-          <h1 className="text-white text-2xl md:text-5xl font-bold drop-shadow-[0_2px_2px_rgba(0,0,0,1)]">
+          <h1 className="text-white text-3xl md:text-5xl font-bold drop-shadow-[0_2px_2px_rgba(0,0,0,1)]">
             {title}
           </h1>
         </div>

@@ -14,7 +14,7 @@ export default function DisplayMap() {
           alt={currentMap.id}
           width={296}
           height={296}
-          className="w-25 md:w-50 h-auto"
+          className="w-50 h-auto"
         />
       </div>
     </div>
